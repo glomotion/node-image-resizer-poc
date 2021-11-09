@@ -34,7 +34,6 @@ async function processImage(collections: Collection[]) {
   for (let collection of collections) {
     try {
       if (!collection.collection_image_url) return;
-      count += 1;
       console.log("$$$$$$$$$$$$$$ PROCESSING:", count, collection);
       const imageBuffer = (
         await axios({
@@ -53,6 +52,7 @@ async function processImage(collections: Collection[]) {
             )}--collection_image_url.webp`
           )
         );
+      count += 1;
     } catch (err) {
       console.error("@@@@@@@@@@", err);
     }
