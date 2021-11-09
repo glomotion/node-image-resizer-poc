@@ -19,7 +19,14 @@
   "homepage": "https://github.com/glomotion/node-image-resizer-poc#readme",
   "devDependencies": {
     "@types/node": "^16.11.7",
+    "@types/sharp": "^0.29.3",
     "nodemon": "^2.0.14",
     "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "node-fetch": "^2.6.6",
+    "sharp": "^0.29.2",
+    "sharpjs": "^0.1.11"
   }
 }
