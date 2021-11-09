@@ -1,0 +1,25 @@
+{
+  "name": "image-resizer-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glomotion/node-image-resizer-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glomotion/node-image-resizer-poc/issues"
+  },
+  "homepage": "https://github.com/glomotion/node-image-resizer-poc#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0"
+  }
+}

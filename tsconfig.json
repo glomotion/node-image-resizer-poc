@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "noEmit": true,
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "es7", "esnext"],
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
+    // ^ @NOTE
+    // "types" is a very badly named key for global-types
+    // Anything global (type-wise) needs to go in there
+    "allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+    "esModuleInterop": true,
+    "allowJs": true, // include js files
+    "declaration": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "strict": true,
+    "pretty": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "isolatedModules": false
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
