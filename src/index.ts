@@ -17,6 +17,7 @@ function slugifyName(name: string) {
     .replace(/\s+/g, "-") // collapse whitespace and replace by -
     .replace(/-+/g, "-"); // collapse dashes
 }
+
 async function fetchCollections() {
   try {
     const { data } = await axios.get(
